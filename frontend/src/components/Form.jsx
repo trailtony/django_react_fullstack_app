@@ -35,14 +35,14 @@ function Form({ route, method }) {
     return (
         <form onSubmit={handleSubmit} className="form-container">
             <h1>{name}</h1>
-            <input 
+            <input
                 className="form-input"
                 type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 placeholder="Username"
             />
-            <input 
+            <input
                 className="form-input"
                 type="password"
                 value={password}
