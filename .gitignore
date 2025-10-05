@@ -201,6 +201,11 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
+# WARP
+#  WARP is an AI-powered code editor. `.warpignore` specifies files/directories to
+#  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
+WARP.md
+
 # Marimo
 marimo/_static/
 marimo/_lsp/

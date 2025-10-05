@@ -1,6 +1,9 @@
 import React from "react";
+import "../styles/Note.css";
 
 function Note({note, onDelete}){
+    const formattedDate = new Date(note.created_at).toLocaleDateString();
+    
     return (
         <div className="note-container">
             <p className="note-title">{note.title}</p>

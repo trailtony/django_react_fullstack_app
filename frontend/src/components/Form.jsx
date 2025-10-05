@@ -8,14 +8,14 @@ import LoadingIndicator from "./LoadingIndicator";
 function Form({ route, method }) {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    cosnt [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
 
     const name = method === "login" ? "Login" : "Register";
 
     const handleSubmit = async (e) => {
         setLoading(true);
-        e.prevendtDefault();
+        e.preventDefault();
 
         try{
             const res = await api.post(route, { username, password})
